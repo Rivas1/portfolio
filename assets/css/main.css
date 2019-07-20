@@ -4691,6 +4691,18 @@ input, select, textarea {
 	.post .skills {
 		display: grid;
 		grid-template-columns: 1fr 1fr 1fr;
+		text-align: center;
+	}
+
+	.post .skills .frontend-skills p {
+		text-align: center;
+	}
+	.post .skills .backend-skills  p {
+		text-align: center;
+	}
+
+	.post .skills .other-skills p {
+		text-align: center;
 	}
 
 
