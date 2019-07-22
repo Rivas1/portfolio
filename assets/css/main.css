@@ -1,12 +1,6 @@
 @import url(fontawesome-all.min.css);
 @import url("https://fonts.googleapis.com/css?family=Merriweather:300,700,300italic,700italic|Source+Sans+Pro:900");
 
-/*
-	Massively by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
-
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
 pre, a, abbr, acronym, address, big, cite,
@@ -71,6 +65,18 @@ input, select, textarea {
 	-ms-appearance: none;
 	appearance: none;
 }
+
+
+#version-1-content,
+#version-2-content {
+	display: none;
+}
+
+/* Show class */
+.show {
+    display: block !important;
+}
+
 
 /* Basic */
 
@@ -3704,6 +3710,7 @@ input, select, textarea {
 				display: block;
 				padding-left: 0;
 			}
+			
 
 				#nav ul.links li a {
 					-moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
@@ -3744,6 +3751,32 @@ input, select, textarea {
 			flex-shrink: 0;
 			margin-bottom: 0;
 		}
+
+		#project_bullnose #nav {
+			padding: 0;
+			margin: 0;
+			display: flex;
+		}
+		#project_bullnose #nav ul.links {
+			flex-grow: 1;
+			padding: 0;
+			margin: 0;
+		}
+
+		#project_bullnose #nav ul.links li {
+			/* color: red; */
+			background-color: lightslategray;
+			flex-grow: 1;
+			margin: auto;
+			padding: 0 0 1rem 3rem;
+			margin: 0;	
+			/* text-decoration: underline; */
+			cursor: pointer;
+		}
+
+		#project_bullnose #nav ul.links li:hover {
+			color: #fcc100;
+		} 
 
 		@media screen and (max-width: 980px) {
 
@@ -3823,7 +3856,7 @@ input, select, textarea {
 
 			}
 
-		#main > .posts {
+		#main > .projects {
 			display: -moz-flex;
 			display: -webkit-flex;
 			display: -ms-flex;
@@ -3841,7 +3874,7 @@ input, select, textarea {
 			padding: 0;
 		}
 
-			#main > .posts > * {
+			#main > .projects > * {
 				-moz-flex-shrink: 1;
 				-webkit-flex-shrink: 1;
 				-ms-flex-shrink: 1;
@@ -3852,16 +3885,16 @@ input, select, textarea {
 				flex-grow: 0;
 			}
 
-			#main > .posts > * {
+			#main > .projects > * {
 				width: 50%;
 			}
 
-			#main > .posts > * {
+			#main > .projects > * {
 				padding: 4rem;
 				width: 50%;
 			}
 
-			#main > .posts > article {
+			#main > .projects > article {
 				border-color: #eeeeee;
 				border-left-width: 2px;
 				border-style: solid;
@@ -3869,25 +3902,25 @@ input, select, textarea {
 				text-align: center;
 			}
 
-				#main > .posts > article > :last-child {
+				#main > .projects > article > :last-child {
 					margin-bottom: 0;
 				}
 
-				#main > .posts > article:nth-child(2n - 1) {
+				#main > .projects > article:nth-child(2n - 1) {
 					border-left-width: 0;
 				}
 
-				#main > .posts > article:nth-child(-n + 2) {
+				#main > .projects > article:nth-child(-n + 2) {
 					border-top-width: 0;
 				}
 
 			@media screen and (max-width: 980px) {
 
-				#main > .posts > * {
+				#main > .projects > * {
 					width: 50%;
 				}
 
-				#main > .posts > * {
+				#main > .projects > * {
 					padding: 2.5rem;
 					width: 50%;
 				}
@@ -3896,32 +3929,32 @@ input, select, textarea {
 
 			@media screen and (max-width: 736px) {
 
-				#main > .posts > * {
+				#main > .projects > * {
 					width: 100%;
 				}
 
-				#main > .posts > * {
+				#main > .projects > * {
 					padding: 2rem;
 					width: 100%;
 				}
 
-				#main > .posts > article:nth-child(2n - 1) {
+				#main > .projects > article:nth-child(2n - 1) {
 					border-left-width: 2px;
 				}
 
-				#main > .posts > article:nth-child(-n + 2) {
+				#main > .projects > article:nth-child(-n + 2) {
 					border-top-width: 2px;
 				}
 
-				#main > .posts > article:nth-child(n) {
+				#main > .projects > article:nth-child(n) {
 					border-left-width: 0;
 				}
 
-				#main > .posts > article:nth-child(-n + 1) {
+				#main > .projects > article:nth-child(-n + 1) {
 					border-top-width: 0;
 				}
 
-				#main > .posts > article .image {
+				#main > .projects > article .image {
 					max-width: 25rem;
 					margin-left: auto;
 					margin-right: auto;
